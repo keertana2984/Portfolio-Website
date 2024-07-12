@@ -1,0 +1,271 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #0c0433;
+    color: white;
+    font-family: 'poppins', sans serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    background-color: #06133e;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 23px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li a:hover {
+    color: #FE7A36;
+    font-size: 1.01rem;
+}
+
+.homepage img {
+    width: 50px;
+    margin-top: 5px
+}
+
+.left {
+    font-size: 1.75rem;
+}
+
+.firstSection {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 23px 0;
+}
+
+.firstSection>div {
+    width: 40%;
+}
+
+.leftSection {
+    font-size: 3rem;
+}
+
+.rightSection img {
+    transition: transform .2s;
+}
+
+.rightSection img:hover {
+    transform: scale(1.2);
+}
+
+.index-img {
+    width: 80%;
+    margin: 30px 0;
+}
+
+.Keertana {
+    color: #FE7A36;
+}
+
+#element {
+    background-image: linear-gradient(to right, #152864, white, #FE7A36);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.footer {
+    align-items: center;
+    bottom: 0;
+    color: #FE7A36;
+    display: flex;
+    flex-wrap: wrap;
+    height: 40px;
+    justify-content: space-evenly;
+    letter-spacing: .5px;
+    margin: 10px auto 10px;
+    position: relative;
+    text-align: center;
+    width: 90%;
+}
+
+.footer-links {
+    display: flex;
+    font-size: 18px;
+    justify-content: space-evenly;
+    width: 180px;
+}
+
+.footer-links img {
+    width: 20px;
+    height: 18px;
+}
+
+.about-picture {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    margin-top: 80px;
+    margin-right: 150px;
+}
+
+.firstSection-about {
+    display: flex;
+    justify-content: space-around;
+    margin: 23px 0;
+}
+
+.leftSection-about {
+    font-size: 2rem;
+    margin: 100px;
+}
+
+.leftSection-about>p {
+    font-size: 1rem;
+    width: 75%;
+}
+
+main hr {
+    border: 0;
+    background: white;
+    height: 1.2px;
+    margin: 40px 84px;
+}
+
+.education {
+    max-width: 80vw;
+    margin: auto;
+    height: 40vh;
+}
+
+.education h1 {
+    font-size: 1.9rem;
+}
+
+.education .box {
+    background-color: white;
+    width: 80vw;
+    height: 2px;
+    margin: 56px 0;
+    display: flex;
+}
+
+.education .vertical {
+    height: 75px;
+    width: 1px;
+    background-color: white;
+    margin: 0 140px;
+}
+
+.image-top {
+    width: 86px;
+    position: relative;
+    top: -30px;
+    left: -9px;
+}
+
+.vertical-title {
+    position: relative;
+    top: 50px;
+    width: 150px;
+}
+
+.vertical-desc {
+    position: relative;
+    top: 60px;
+    color: #fe793697;
+    width: 150px;
+    font-size: 15px;
+}
+
+
+.project {
+    display: inline-block;
+    margin: 50px 300px;
+    background-image: linear-gradient(to right, #152864, white, #FE7A36);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.project-snippet {
+    width: 500px;
+}
+
+.p1 {
+    display: flex;
+}
+
+.project-content {
+    margin: 30px 120px;
+    width: 40%;
+}
+
+.project-title {
+    margin-bottom: 20px;
+    color: #FE7A36;
+}
+
+.project-desc {
+    margin-bottom: 20px;
+}
+
+.project-link {
+    text-decoration: none;
+    color: #FE7A36;
+    font-size: 1rem;
+}
+
+.project-button {
+    padding: 10px;
+    margin-left: 215px;
+    border-radius: 40px;
+    background-color: #152864;
+    border: 1px solid black;
+    transition: transform .2s;
+}
+
+.project-button:hover {
+    transform: scale(1.1);
+}
+
+.manymore {
+    margin-left: 50px;
+    margin-bottom: 50px;
+}
+
+
+.resume-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    margin-top: 50px;
+    transition: transform .2s;
+}
+
+.resume-img:hover{
+    transform: scale(1.04);
+}
+
+.download{
+    padding: 15px;
+    margin-left: 680px;
+    border-radius: 40px;
+    background-color:#FE7A36;
+    color:#152864;
+    border: 1px solid black;
+    cursor:pointer;
+    margin-bottom: 50px;
+}
