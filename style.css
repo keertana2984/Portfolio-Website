@@ -1,3 +1,5 @@
+/*this css, by default, is for 1440px screens*/
+
 * {
     margin: 0;
     padding: 0;
@@ -136,7 +138,15 @@ nav ul li a:hover {
     width: 75%;
 }
 
-.about-content{
+.rightSection-about img {
+    transition: transform .2s;
+}
+
+.rightSection-about img:hover {
+    transform: scale(1.2);
+}
+
+.about-content {
     margin-bottom: 30px;
 }
 
@@ -207,6 +217,14 @@ main hr {
     width: 500px;
 }
 
+.rightSection-project img {
+    transition: transform .2s;
+}
+
+.rightSection-project img:hover {
+    transform: scale(1.2);
+}
+
 .p1 {
     display: flex;
 }
@@ -259,17 +277,176 @@ main hr {
     transition: transform .2s;
 }
 
-.resume-img:hover{
+.resume-img:hover {
     transform: scale(1.04);
 }
 
-.download{
+.download-resume {
+    display: flex;
+    justify-content: center;
+}
+
+.download {
+    text-decoration: none;
+    margin-left: 0;
     padding: 15px;
-    margin-left: 680px;
     border-radius: 40px;
-    background-color:#FE7A36;
-    color:#152864;
+    background-color: #FE7A36;
+    color: #152864;
     border: 1px solid black;
-    cursor:pointer;
+    cursor: pointer;
     margin-bottom: 50px;
+}
+
+
+/* media queries for responsiveness */
+
+
+/*this also works pretty well and acceptably good for 748 px as well*/
+@media screen and (max-width: 1024px) {
+    .education {
+        height: 800px;
+    }
+
+    .box {
+        flex-direction: column;
+        height: 200vh;
+    }
+
+    .education .box {
+        width: 0;
+        margin-left: 40%;
+    }
+
+    .education .vertical {
+        height: 87px;
+        width: 1px;
+        background-color: white;
+        margin: 50px;
+        margin-left: 50%;
+    }
+
+    .firstSection-about {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .leftSection-about {
+        padding-left: 100px;
+    }
+
+    .rightSection-about {
+        padding-left: 150px;
+    }
+
+    .firstSection {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .firstSection>div {
+        width: 60%;
+    }
+
+    .leftSection {
+        width: 100% !important;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-left: 0;
+    }
+
+    .rightSection {
+        width: 300px !important
+    }
+
+    .rightSection img {
+        padding-left: 30px;
+    }
+
+    .p1 {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .project-button {
+        margin-left: 0;
+    }
+
+    .project {
+        margin: 50px 150px;
+    }
+
+    .resume-img{
+        width: 70%;
+    }
+
+    .download-resume {
+        display: flex;
+        justify-content: center;
+    }
+
+    .download {
+        text-decoration: none;
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        min-width: fit-content;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 80px;
+        background-color: #06133e;
+        width: auto;
+    }
+
+    .rightSection img {
+        padding-left: 30px;
+    }
+
+    .rightSection-about img {
+        width: 150px;
+        height: auto;
+    }
+
+    .leftSection-about {
+        padding: 0;
+        margin: 0;
+        text-align: center;
+    }
+
+    .leftSection-about span {
+        margin: 5px;
+    }
+
+    .leftSection-about p {
+        width: 95%;
+        margin-left: 20px;
+    }
+
+    .project {
+        margin: 30px;
+    }
+
+    .project-snippet {
+        width: 300px;
+    }
+
+    .project-content{
+        width: 70%;
+        text-align: center;
+    }
+
+    .resume-img{
+        width: 90%;
+    }
 }
